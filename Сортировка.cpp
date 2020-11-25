@@ -13,26 +13,19 @@ int main()
 	int size;
 	cout << "Size: "; cin >> size;
 	long a[x];
-	cout << "_____________________________________BubleSort_______________________________________________" << "\n\n" << endl;
 	
 	Random(a, size);
-	Buble(a, size);
-	/*for (int i = 0; i < size; i++)
-	{
-		cout << a[i] << endl;
-	}
-	*/
+	BubleSort(a, size);
 	Cout(a, size);
 	cout << "  " << endl;
-	cout << "______________________________________ShakerSort_____________________________________________" << "\n\n" << endl;
 	long MyInt[x];
 	Random(MyInt, size);
-	Shaker(MyInt, size);
+	ShakerSort(MyInt, size);
 	Cout(MyInt, size);
 	cout << "  " << endl;
 }
 
-void Buble(long a[] , long size)
+void BubleSort(long a[] , long size)
 {
 	long i;
 	long j;
@@ -76,7 +69,7 @@ void Swap(long MyInt[], long i, long j)
 	MyInt[j] = glass;
 }
 
-void Shaker(long MyInt[], long size)
+void ShakerSort(long MyInt[], long size)
 {
 	long left = 0;
 	long right = size - 1;
@@ -103,5 +96,5 @@ void Shaker(long MyInt[], long size)
 		Cout(MyInt, size);
 		cout << "  " << "\n" << endl;
 	}
-	cout << "Number of comparisons: " << count <<"\n" <<  endl;
+	cout << "Count: " << count <<"\n" <<  endl;
 }

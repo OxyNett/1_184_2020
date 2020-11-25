@@ -11,7 +11,7 @@ int main()
 	cin >> a >> b;
 	if (a == 0)
 	{
-		cout << "Error, na 0 delit nelza";
+		cout << "Error";
 	}
 	else
 	{

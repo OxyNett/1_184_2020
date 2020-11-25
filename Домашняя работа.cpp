@@ -1,6 +1,4 @@
-﻿//Пользователь вводит целое число, на экране этой размерности рисуется квадрат.
-
-#include <iostream>
+﻿#include <iostream>
 
 using namespace std;
 
